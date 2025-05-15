@@ -14,3 +14,6 @@ function closeForm() {
     
     taskForm.classList.add("hidden");
 }
+function guardarTarea() {
+
+}
