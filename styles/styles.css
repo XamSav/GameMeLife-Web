@@ -1,3 +1,4 @@
+/* variables de color */
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
@@ -19,6 +20,14 @@ nav {
     justify-content: flex-end;
     align-items: center;
     width: auto;
+    height: 60px;
+    position: relative;
+}
+nav img {
+    height: 50px; /* Ajusta la altura de la imagen del logo */
+    margin-right: auto; /* Empuja los demás elementos a la derecha */
+    margin-left: 10px; /* Espacio a la izquierda de la imagen */
+    order: -1; /* Coloca la imagen al principio del flex */
 }
 nav ul {
     list-style: none; /* Elimina los puntos de la lista */
