@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color:#F4EDEA ;
+    --background-color: #1b1f3b;
+}
+body
+{
+    background-color: var(--background-color);
+    display: block;
+}
+body *
+{
+    border: solid 1px var(--primary-color); /* Borde de 1px con color primario */
+}
+/* Estilos para el navbar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+}
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    display: flex; /* Muestra los elementos en línea */
+
+}
+nav li {
+    margin: 0 10px; /* Espaciado entre los elementos de la lista */
+  
+}
+nav li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: var(--text-color); /* Color del texto de los enlaces */
+    padding: 5px 10px; /* Espaciado interno para los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+}
+nav > * {
+    margin-left: 10px; /* Espaciado opcional entre elementos */
+}
+/*Estilos para el container*/
+.container {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; /* Altura completa de la ventana */
+    min-width: 300px; /* Ancho mínimo de 300px */
+    max-height: 500px; /* Ancho máximo de 300px */
+    gap: 10px; /* Espaciado entre los elementos */
+}
+
+.container > * {
+    flex: 1; /* Los elementos ocupan el mismo espacio */
+    max-width: 50%; /* Asegura que no superen el 50% del ancho del contenedor */
+}
+.Perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    max-height: 100%; /* Asegura que no supere la altura del contenedor padre */
+  
+}
+.Formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%; /* Asegura que no supere la altura del contenedor padre */
+  
+}
+/* Estilos para el formulario */
+.hidden {
+    display: none;
+  }
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal.hidden {
+    display: none !important;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+/* Estilos para las Tareas */
+.Tareas {
+    display: inline-flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%; /* Asegura que no supere la altura del contenedor padre */
+    width: 100%; /* Asegura que no supere la altura del contenedor padre */
+    gap: 10px; /* Espaciado entre los elementos */
+}
+.Tareas > * {
+    flex: 1; /* Los elementos ocupan el mismo espacio */
+    max-width: 30%; /* Asegura que no supere el 50% del ancho del contenedor */
+}
