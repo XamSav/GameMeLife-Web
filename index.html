@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Adventure ToDo List</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="ToDo.html">Inicio</a></li>
+            <li><a href="Misiones.html">Misiones</a></li>
+            <li><a href="Logros.html">Logros</a></li>
+            <li><a href="Tienda.html">Tienda</a></li>
+            <li><a href="Perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+       <div class="Perfil">
+        <img src="img/Perfil.png" alt="Perfil" class="perfil-img">
+        <div class="user-info">
+            <h2>Nombre de Usuario:</h2>
+            <p class="user-name"></p>
+        
+            <h2>Lvl:</h2>
+            <p class="user-lvl"></p>
+     
+            <h2>Exp:</h2>
+            <p class="user-exp"></p>
+          
+        </div>
+       </div>
+        <div class="Formulario">
+            <button type="button" id="openForm"><h2>Agregar Tarea</h2></button>
+        </div>
+        <div id="taskForm" class="modal hidden">
+            <div class="modal-content">
+            <span class="close" id="closeForm">&times;</span>
+            <h2>Agregar Nueva Tarea</h2>
+            <form method="dialog" id="newTaskForm">
+                <label for="taskName">Nombre de la Tarea:</label>
+                <input type="text" id="taskName" name="taskName" required>
+                
+                <label for="taskDescription">Descripción:</label>
+                <textarea id="taskDescription" name="taskDescription" required></textarea>
+                
+                <label for="taskDifficulty">Dificultad:</label>
+                <select id="taskDifficulty" name="taskDifficulty">
+                <option value="facil">Fácil</option>
+                <option value="intermedia">Intermedia</option>
+                <option value="dificil">Difícil</option>
+                <option value="epico">Épico</option>
+                <option value="legendario">Legendario</option>
+                </select>
+                
+                <label for="taskFrequency">Frecuencia:</label>
+                <select id="taskFrequency" name="taskFrequency">
+                <option value="diaria">Diaria</option>
+                <option value="semanal">Semanal</option>
+                <option value="mensual">Mensual</option>
+                <option value="trimestral">Trimestral</option>
+                <option value="anual">Anual</option>
+                </select>
+                
+                <label for="taskCategory">Categoría:</label>
+                <select id="taskCategory" name="taskCategory">
+                <option value="inteligencia">Inteligencia</option>
+                <option value="defensa">Defensa</option>
+                <option value="carisma">Carisma</option>
+                <option value="artesania">Artesanía</option>
+                </select>
+                
+                <button type="submit">Guardar Tarea</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="Tareas">
+        <div class="Tareas-pendientes">
+            <h2>Tareas Pendientes</h2>
+            <ul id="pending-tasks"></ul> 
+        </div>
+        <div class="'Tareas-encurso'">
+            <h2>Tareas en Curso</h2>
+            <ul id="in-progress-tasks"></ul>
+        </div>
+        <div class="Tareas-completadas">
+            <h2>Tareas Completadas</h2>
+            <ul id="completed-tasks"></ul>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
