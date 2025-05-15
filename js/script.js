@@ -49,6 +49,9 @@ function guardarTarea() {
         console.log(taskList);
         closeForm();
         agregarTarea(taskId, newTask);
+        // Clear the form fields
+        txt.value = "";
+        descriptionTxt.value = "";
     } else {
         alert("Please fill in all fields.");
     }
