@@ -1,0 +1,21 @@
+/* variables de color */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color:#F4EDEA ;
+    --background-color: #1b1f3b;
+}
+*{
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el tamaño total del elemento */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+}
+body
+{
+    background-color: var(--background-color);
+    display: block;
+}
+body *
+{
+    border: solid 1px var(--primary-color); /* Borde de 1px con color primario */
+}
