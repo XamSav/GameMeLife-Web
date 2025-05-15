@@ -1,6 +1,7 @@
 const openFormBtn = document.getElementById("openForm");
 const closeFormBtn = document.getElementById("closeForm");
 const taskForm = document.getElementById("taskForm");
+const guardarBtn = document.getElementById("guardar-btn");
 
 openFormBtn.addEventListener("click", openForm);
 closeFormBtn.addEventListener("click", closeForm);
