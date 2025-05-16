@@ -3,7 +3,8 @@ const misionDescriptionTA = document.getElementById("misionDescription");
 const misionDifficulty = document.getElementById("misionDifficulty");
 const misionDate = document.getElementById("misionDate");
 const agragarbtn = document.getElementById("agregarbtn");
-agregarbtn.addEventListener("click", agragarbtnMision());
+agragarbtn.addEventListener("click", agragarbtnMision());
+
 function agragarbtnMision() {
     const name = misionName.value;
     const description = misionDescription.value;
