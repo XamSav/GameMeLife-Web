@@ -20,3 +20,27 @@ body *
 {
     border: solid 1px var(--primary-color); /* Borde de 1px con color primario */
 }
+.mission-item {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacio entre los elementos */
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mission-item div {
+    flex: 1; /* Los elementos ocupan el mismo espacio */
+    height: 100%; /* Asegura que no supere la altura del contenedor padre */
+}
+
+.mission-item div:last-child {
+    flex: 0 0 80px; /* El último elemento será más pequeño (ajusta el ancho según lo necesites) */
+}
+.mission-item button {
+    background-color: var(--background-color);   
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

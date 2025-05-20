@@ -44,10 +44,27 @@ function addMissionToList(mission) {
     const listItem = document.createElement("li");
     listItem.className = "mission-item";
     listItem.innerHTML = `
-        <p>${mission.name} - ${mission.description} - ${mission.difficulty}</p>
-        <button class="delete-btn" title="Eliminar">
-            <img src="../imagenes/delete.svg" alt="Delete" width="20" height="20"></button>
-        </button>
+         <div class="Name-li"><p>${mission.name}</p></div>
+                       <div class="Descripción-li"><p>${mission.description}</p></div>
+                       <div class="Fecha-li"><p>Fecha</p></div>
+                       <div class="Dificultad-li"><p>${mission.description}</p></div>
+                       <div class="btn">
+                            <button class="delete-btn" title="Eliminar">
+                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+<g transform=""><g fill="#1b1f3b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
+    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+    <path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" 
+    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" 
+    style="mix-blend-mode: normal"><g transform="scale(16,16)">
+    <path d="M8,9.704l-3.943,3.942l-1.703,-1.703l3.942,-3.943l-3.942,-3.943l1.703,-1.703l3.943,3.942l3.943,-3.942l1.703,1.703l-3.942,3.943l3.942,3.943l-1.703,1.703z"
+     fill="#f78f8f"></path>
+     <path d="M11.943,2.707l1.35,1.35l-3.589,3.589l-0.354,0.354l0.354,0.354l3.589,3.589l-1.35,1.35l-3.589,-3.589l-0.354,-0.354l-0.354,0.354l-3.589,3.589l-1.35,-1.35l3.589,-3.589l0.354,
+     -0.354l-0.354,-0.354l-3.589,-3.589l1.35,-1.35l3.589,3.589l0.354,0.354l0.354,-0.354l3.589,-3.589M11.943,2l-3.943,3.943l-3.943,-3.943l-2.057,2.057l3.943,
+     3.943l-3.943,3.943l2.057,2.057l3.943,-3.943l3.943,3.943l2.057,-2.057l-3.943,-3.943l3.943,-3.943l-2.057,-2.057z" fill="#c74343"></path></g></g></g>
+</svg>
+                        
+                            </button>
+                          </div>
     `;
 
     // Add event listener to the delete button inside this list item
